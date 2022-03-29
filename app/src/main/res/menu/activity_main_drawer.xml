@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_qr"
+            android:title="@string/menu_qrscan" />
+
+        <item
+            android:id="@+id/QRMaker"
+            android:title="QR Maker" />
+
+        <item
+            android:id="@+id/nav_c"
+            android:title="@string/menu_contactTracing" />
+
+        <item
+            android:id="@+id/Site_Info"
+            android:title="Site Info" />
+
+
+        <item
+            android:id="@+id/OrganisationInfo"
+            android:title="Organisation Info" />
+
+        <item
+            android:id="@+id/customer_history"
+            android:title="Customer history" />
+
+        <item
+            android:id="@+id/OrganisationHistory"
+            android:title="Organisation History" />
+
+
+        <item
+            android:id="@+id/nav_vac"
+            android:title="Vaccine Information" />
+
+        <item
+            android:id="@+id/vaccineCert"
+            android:title="Vaccine Certificate" />
+
+        <item
+            android:id="@+id/AdministratePatient"
+            android:title="Administrate Patient" />
+        <item
+            android:id="@+id/PatientRecords"
+            android:title="Patient Records" />
+
+        <item
+            android:id="@+id/VaccineRollout"
+            android:title="Vaccine Rollout" />
+
+        <item
+            android:id="@+id/alerts"
+            android:title="Alerts" />
+
+
+        <item
+            android:id="@+id/settings"
+            android:title="Settings" />
+
+    </group>
+</menu>

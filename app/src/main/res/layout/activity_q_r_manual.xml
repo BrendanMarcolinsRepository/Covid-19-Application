@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qrLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRManual">
+
+    <EditText
+        android:id="@+id/firstNameQRMan"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/open_sans"
+        android:hint="First Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleQRMan" />
+
+    <EditText
+        android:id="@+id/lastNameQRMan"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/open_sans"
+        android:hint="Last Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameQRMan" />
+
+    <EditText
+        android:id="@+id/mobileQRMan"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/open_sans"
+        android:hint="Mobile Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameQRMan" />
+
+    <EditText
+        android:id="@+id/emailQRMan"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/open_sans"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileQRMan" />
+
+    <EditText
+        android:id="@+id/manualEnteredaddress"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/open_sans"
+        android:hint="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailQRMan" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enterManualQR"
+        android:layout_width="129dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#4C71E3"
+        android:hint="Enter"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resetManualQR"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manualEnteredaddress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resetManualQR"
+        android:layout_width="129dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#4C71E3"
+        android:hint="Reset"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manualEnteredaddress" />
+
+    <TextView
+        android:id="@+id/titleQRMan"
+        android:layout_width="293dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="Enter QR (Code Manually)"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

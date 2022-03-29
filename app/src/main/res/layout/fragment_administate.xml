@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".healthPackage.adminPatient.administratePatient">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register"
+        android:layout_width="227dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#4C71E3"
+        android:fontFamily="@font/open_sans"
+        android:hint="Register Patient"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccinePatient1"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <EditText
+        android:id="@+id/firstNamePatient1"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lastNamePatient1"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNamePatient1" />
+
+    <EditText
+        android:id="@+id/datePatient1"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Date"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNamePatient1" />
+
+    <EditText
+        android:id="@+id/patientEmailPatient1"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePatient1" />
+
+    <EditText
+        android:id="@+id/medicarePatient1"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Medicare Number"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientEmailPatient1" />
+
+    <EditText
+        android:id="@+id/vaccinePatient1"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="Vaccine Number"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicarePatient1" />
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="left"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+</androidx.constraintlayout.widget.ConstraintLayout>

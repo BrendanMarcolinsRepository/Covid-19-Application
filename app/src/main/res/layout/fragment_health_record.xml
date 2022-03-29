@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".healthPackage.patientRecord.records">
+
+    <EditText
+        android:id="@+id/patientSeach"
+        android:layout_width="208dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/open_sans"
+        android:hint="Search Patient"
+        app:layout_constraintEnd_toStartOf="@+id/patientSeachButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/patientSeachButton"
+        android:layout_width="104dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#4C71E3"
+        android:fontFamily="@font/open_sans"
+        android:hint="Search"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/patientListview"
+        android:layout_width="363dp"
+        android:layout_height="476dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientSeach"
+        app:layout_constraintVertical_bias="0.346" />
+</androidx.constraintlayout.widget.ConstraintLayout>

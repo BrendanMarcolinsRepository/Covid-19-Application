@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.covid19app.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_qr"
+        android:name="com.example.covid19app.ui.qrscan.QRScan"
+        android:label="@string/menu_qrscan"
+        tools:layout="@layout/fragment_qrscan" />
+
+    <fragment
+        android:id="@+id/nav_c"
+        android:name="com.example.covid19app.ui.contacttracing.ContactTracingFragment"
+        android:label="@string/menu_contactTracing"
+        tools:layout="@layout/fragment_contacttracing" />
+
+    <fragment
+        android:id="@+id/nav_vac"
+        android:name="com.example.covid19app.ui.vac.VacInfo"
+        android:label="Vaccine Information"
+        tools:layout="@layout/fragment_vac_info" />
+
+    <fragment
+        android:id="@+id/Site_Info"
+        android:name="com.example.covid19app.businessUI.siteinfo.siteInfo"
+        android:label="Site Info"
+        tools:layout="@layout/fragment_site_info" />
+    <fragment
+        android:id="@+id/customer_history"
+        android:name="com.example.covid19app.businessUI.customerHistory.customerHistory"
+        android:label="Customer History"
+        tools:layout="@layout/fragment_customer_history" />
+    <fragment
+        android:id="@+id/QRMaker"
+        android:name="com.example.covid19app.businessUI.ContractTracing.ContactTracing"
+        android:label="QR Maker"
+        tools:layout="@layout/fragment_business_contract_tracing" />
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.covid19app.ui.settingsPackage.settings"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/AdministratePatient"
+        android:name="com.example.covid19app.healthPackage.adminPatient.administratePatient"
+        android:label="Administrate Patient"
+        tools:layout="@layout/fragment_administate" />
+
+
+    <fragment
+        android:id="@+id/PatientRecords"
+        android:name="com.example.covid19app.healthPackage.patientRecord.records"
+        android:label="Patient Records"
+        tools:layout="@layout/fragment_health_record" />
+
+    <fragment
+        android:id="@+id/VaccineRollout"
+        android:name="com.example.covid19app.organisations.rolloutPackage.rollout"
+        android:label="Vaccine Rollout"
+        tools:layout="@layout/fragment_rollout" />
+
+    <fragment
+        android:id="@+id/OrganisationHistory"
+        android:name="com.example.covid19app.organisations.organisationHistory.organisationHistory"
+        android:label="Organisation History"
+        tools:layout="@layout/fragment_organisation_history" />
+
+    <fragment
+        android:id="@+id/OrganisationInfo"
+        android:name="com.example.covid19app.organisations.organisationsInfo.organisationInfo"
+        android:label="Organisation Info"
+        tools:layout="@layout/fragment_organisation_info" />
+
+    <fragment
+        android:id="@+id/vaccineCert"
+        android:name="com.example.covid19app.ui.vaccinecertification.vaccineCertification"
+        android:label="Vaccine Certification"
+        tools:layout="@layout/vaccine_certification" />
+
+    <fragment
+        android:id="@+id/alerts"
+        android:name="com.example.covid19app.ui.alertsPackage.alerts"
+        android:label="Alerts"
+        tools:layout="@layout/fragment_alerts" />
+
+
+</navigation>
